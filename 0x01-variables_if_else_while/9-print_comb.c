@@ -11,7 +11,7 @@ int x;
 
 for (x = '0'; x <= '9'; x++)
 {
-if (x !=0)
+if (x != '0')
 {
 putchar(',');
 putchar(' ');
