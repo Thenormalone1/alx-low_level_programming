@@ -12,7 +12,7 @@ int a;
 int b;
 for (a = 0; a <= 23; a++)
 {
-while (a <= 9)
+if (a <= 9)
 {
 _putchar('0');
 }
@@ -21,7 +21,7 @@ _putchar(':');
 }
 for (b = 0; b <= 59; b++)
 {
-while (b <= 9)
+if (b <= 9)
 {
 _putchar('0');
 }
