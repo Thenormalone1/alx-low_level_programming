@@ -2,7 +2,7 @@
 
 /**
  * add - adding numbers
- * @n1, @n2: integars to add
+ * @n1: integar 1 @n2:integar 2
  * Return: addition
  */
 
