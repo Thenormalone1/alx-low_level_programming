@@ -12,20 +12,20 @@ int a;
 int b;
 for (a = 0; a <= 23; a++)
 {
+for (b = 0; b <= 59; b++)
+{
 if (a <= 9)
 {
 _putchar('0');
 }
-_putchar(a);
+_putchar(a + '0');
 _putchar(':');
-}
-for (b = 0; b <= 59; b++)
-{
 if (b <= 9)
 {
 _putchar('0');
 }
 _putchar(b);
 _putchar('\n');
+}
 }
 }
