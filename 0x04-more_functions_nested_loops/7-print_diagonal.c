@@ -18,7 +18,7 @@ for (i = 0; i < n; i++)
 if (i > 0)
 {
 c = 0;
-while (c > i)
+while (c < i)
 {
 _putchar(' ');
 c++;
