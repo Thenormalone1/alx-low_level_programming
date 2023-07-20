@@ -21,9 +21,6 @@ for (c = 0; c <= x; c++)
 {
 _putchar('#');
 }
-if (x != (size - 1))
-{
 _putchar('\n');
-}
 }
 }
