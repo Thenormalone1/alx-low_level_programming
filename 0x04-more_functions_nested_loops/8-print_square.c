@@ -15,8 +15,8 @@ for (r = 0; r < size; r++)
 {
 _putchar('#');
 }
-if (c != (size - ))
-}
+if (c != (size - 1))
+{
 _putchar('\n');
 }
 }
