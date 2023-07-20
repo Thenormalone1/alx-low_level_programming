@@ -1,5 +1,5 @@
 #include "main.h"
-
+11;rgb:0000/0000/0000
 /**
  * print_diagonal - printing diagonals
  * @n: number of diagonals
@@ -26,6 +26,7 @@ c++;
 }
 }
 _putchar('\\');
+if (i != (n - 1)
 _putchar('\n');
 }
 }
