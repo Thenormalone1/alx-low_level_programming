@@ -1,5 +1,4 @@
 #include "main.h"
-11;rgb:0000/0000/0000
 /**
  * print_diagonal - printing diagonals
  * @n: number of diagonals
