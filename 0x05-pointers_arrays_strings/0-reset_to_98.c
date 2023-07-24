@@ -1,6 +1,11 @@
 #include "main.h"
 
 /**
- * print_sign - checks sign
- * @*n: integer t
+ * reset_to_98 - checks sign
+ * @*n: pointer
  */
+
+void reset_to_98(int *n)
+{
+*n = 98;
+}
