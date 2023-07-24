@@ -14,7 +14,7 @@ while (s[c] != '\0')
 c++;
 }
 len = c - 1;
-for (x = 0; x <= c / 2; x++)
+for (x = 0; x < c / 2; x++)
 {
 temp = s[x];
 s[x] = s[len];
