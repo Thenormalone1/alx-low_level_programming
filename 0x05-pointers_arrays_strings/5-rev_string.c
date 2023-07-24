@@ -18,5 +18,6 @@ for (x = 0; x <= c; x++)
 temp = s[x];
 s[x] = s[c];
 s[c] = temp;
+c--;
 }
 }
