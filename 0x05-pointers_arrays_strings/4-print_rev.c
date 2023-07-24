@@ -15,7 +15,7 @@ x++;
 }
 for (; x >= 0; x--)
 {
-_putchar(x);
+_putchar(s[x]);
 }
 _putchar('\n');
 }
