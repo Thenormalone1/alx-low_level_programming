@@ -18,11 +18,12 @@ for (i = len / 2; str[i] != '\0'; i++)
 {
 _putchar(str[i]);
 }
-} else if (len % 2)
+}
+else if (len % 2)
 {
 for (c = (len - 1) / 2; c < len - 1; c++)
 }
-_putchar(str[n + 1]);
+_putchar(str[c + 1]);
 }
 }
 _putchar('\n');
