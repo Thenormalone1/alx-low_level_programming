@@ -22,7 +22,7 @@ _putchar(str[i]);
 else if (len % 2)
 {
 for (c = (len - 1) / 2; c < len - 1; c++)
-}
+{
 _putchar(str[c + 1]);
 }
 }
