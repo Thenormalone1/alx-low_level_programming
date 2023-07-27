@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * cap_string - caps string
- * @s: string 
+ * @s: string
  * Return: char
  */
 char *cap_string(char *s)
@@ -12,10 +12,10 @@ i = 0;
 while (*(s + i) != '\0')
 {
 if (*(s + i) >= 'a' && *(s + i) <= 'z')
-}
+{
 if (i == 0)
 {
-*(s + i) = *(s + i) - 32;
+*(s + i) = *(s + i) -32;
 }
 else
 {
@@ -23,7 +23,7 @@ for (x = 0; x <= 12; x++)
 {
 if (a[x] == *(s + i - 1))
 {
-*(s + i) = *(s + i) - 32;
+*(s + i) = *(s + i) -32;
 }
 }
 }
