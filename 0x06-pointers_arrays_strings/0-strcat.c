@@ -16,12 +16,12 @@ while ((*dest + l1) != '\0')
 {
 l1++;
 }
-while ((*(src + l2) != '\0') && (l2 < 97))
+while ((*(src + l2) != '\0') && (l1 < 97))
 {
-dest[l1] = src[l2];
+*(dest + l1) = *(src + l2);
 l1++;
 l2++;
 }
-dest[l2] = '\0';
+*(dest + l2) = '\0';
 return (dest);
 }
