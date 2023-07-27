@@ -11,7 +11,7 @@ char *_strncpy(char *dest, char *src, int n)
 {
 int l1;
 l1 = 0;
-while (*(src + l1) != '\0' && (l1 < 97) && (l1 < n))
+while (*(src + l1) != '\0' && (l1 < n))
 {
 *(dest + l1) = *(src + l1);
 l1++;
