@@ -2,10 +2,11 @@
  * _strcat - concatenates 2 strings
  * @dest: string 1
  * @src: string 2
+ * @n: integar for num of bytes
  * Return: char
  */
 
-char *_strcat(char *dest, char *src)
+char *_strcat(char *dest, char *src, int n)
 {
 int l1, l2;
 l1 = 0;
