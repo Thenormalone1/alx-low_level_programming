@@ -16,7 +16,7 @@ while (dest[l1] != '\0')
 {
 l1++;
 }
-while (src[l2] != '\0')
+while ((src[l2] != '\0') && (l2 < 97))
 {
 dest[l1] = src[l2];
 l1++;
