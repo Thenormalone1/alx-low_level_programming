@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * leet - 1337
  * @s: string 1
@@ -9,9 +10,8 @@ char *leet(char *s)
 {
 char a[] = "aeotlAEOTL";
 char n[] = "4307143071";
-int i;
+int i, x;
 i = 0;
-int x;
 while (*(s + i) != '\0')
 {
 for (x = 0; x <= 9; x++)
