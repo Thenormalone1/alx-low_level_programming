@@ -14,7 +14,7 @@ l1 = 0;
 l2 = 0;
 while (*(dest + l1) != '\0')
 {
-lengthD++;
+l1++;
 }
 while (*(src + l2) != '\0' && l1 < 97)
 {
