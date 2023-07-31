@@ -14,7 +14,7 @@ for (x = 0; x < size; x++)
 {
 s1 = s1 + a[x * size + x];
 }
-for (s = size - 1; x >= 0; s--)
+for (x = size - 1; x >= 0; x--)
 {
 s2 = s2 + a[x * size + (size - x - 1)];
 }
