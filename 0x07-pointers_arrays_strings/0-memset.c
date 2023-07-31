@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_sign - checks sign
+ * _memset - checks sign
  * @n: integer to be checked
  * @s: pointer
  * @b: char
@@ -14,5 +14,5 @@ for (x = 0; x < n; x++)
 {
 s[x] = b;
 }
-return(s);
+return (s);
 }
