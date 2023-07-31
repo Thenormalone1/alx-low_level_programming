@@ -18,5 +18,5 @@ for (s = size - 1; x >= 0; s--)
 {
 s2 = s2 + a[x * size + (size - x - 1)];
 }
-printf("%d, %d\n", 1, s2);
+printf("%d, %d\n", s1, s2);
 }
