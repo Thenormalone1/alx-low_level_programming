@@ -42,6 +42,6 @@ return (palind2(a + 1, l - 2));
 int is_palindrome(char *s)
 {
 int x;
-l = palind1(s, 0);
+x = palind1(s, 0);
 return (palind2(s, l));
 }
