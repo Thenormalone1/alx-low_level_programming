@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * sqrt - sqrt1
+ * _sqrt - sqrt1
  * @a: int1
  * @b: int2
  * Return: int
