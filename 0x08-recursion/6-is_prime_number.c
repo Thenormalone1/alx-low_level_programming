@@ -2,7 +2,7 @@
 
 /**
  * is_prime_number - checks if prime
- * @n: integer 
+ * @n: integer
  * Return: int
  */
 int is_prime_number(int n)
