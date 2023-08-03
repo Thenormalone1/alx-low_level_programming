@@ -6,7 +6,7 @@
  * @b: int2
  * Return: int
  */
-int sqrt(int a, int b)
+int _sqrt(int a, int b)
 {
 if (b * b == a)
 return (b);
