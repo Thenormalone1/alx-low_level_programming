@@ -12,7 +12,7 @@ if (b * b == a)
 return (b);
 else if (b * b > a)
 return (-1);
-return (sqrt(a, b + 1));
+return (_sqrt(a, b + 1));
 }
 /**
  * _sqrt_recursion - sqrt
@@ -21,5 +21,5 @@ return (sqrt(a, b + 1));
  */
 int _sqrt_recursion(int n)
 {
-return (sqrt(n, 1));
+return (_sqrt(n, 1));
 }
