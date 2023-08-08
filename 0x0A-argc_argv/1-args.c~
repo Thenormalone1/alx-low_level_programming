@@ -1,0 +1,21 @@
+#include <stdio.h>
+/**
+ * main - Entry point
+ * @argc: size of argv
+ * @argv: array of strings
+ * Return: Always 0 (Success)
+ */
+int main(int argc, char *argv[])
+{
+
+	char *a;
+	a = *argv;
+
+
+	if (argc == 0)
+	{
+		argv[0] = a;
+	}
+	printf("%d", argc);
+	return (0);
+}
