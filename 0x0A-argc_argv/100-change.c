@@ -1,55 +1,5 @@
 #include <stdlib.h>
-#include <ctype.h>
 #include <stdio.h>
-#include <stdbool.h>
-/**
- * coinConverter - helper function
- * @i: int
- * Return: int
- */
-
-int coinConverter(int i)
-{
-	int count = 0;
-
-	while (i != 0)
-	{
-		if (i % 10 == 9 || i % 10 == 7)
-		{
-			i -= 2;
-		}
-		else if (i % 25 == 0)
-		{
-			i -= 25;
-		}
-		else if (i % 10 == 0)
-		{
-			i -= 10;
-		}
-		else if (i % 5 == 0)
-		{
-			i -= 5;
-		}
-		else if (i % 2 == 0)
-		{
-			if (i % 10 == 6)
-			{
-				i -= 1;
-			}
-			else
-			{
-				i -= 2;
-			}
-		}
-		else
-		{
-			i -= 1;
-		}
-		count++;
-	}
-
-	return (count);
-}
 
 /**
  * main - Entry point
@@ -59,9 +9,8 @@ int coinConverter(int i)
  */
 int main(int argc, char *argv[])
 {
-	int i, coin;
-
-	coin = 0;
+	int num, j, result;
+	int coins[] = {25, 10, 5, 2, 1};
 
 	if (argc != 2)
 	{
@@ -69,18 +18,24 @@ int main(int argc, char *argv[])
 		return (1);
 	}
 
-	i = atoi(argv[1]);
+	num = atoi(argv[1]);
+	result = 0;
 
-	if (i < 0)
+	if (num < 0)
 	{
 		printf("0\n");
+		return (0);
 	}
-	else
+
+	for (j = 0; j < 5 && num >= 0; j++)
 	{
-		coin = coinConverter(i);
-
-		printf("%d\n", coin);
+		while (num >= coins[j])
+		{
+			result++;
+			num -= coins[j];
+		}
 	}
 
+	printf("%d\n", result);
 	return (0);
 }
