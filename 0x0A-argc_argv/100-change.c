@@ -1,13 +1,14 @@
 #include <stdlib.h>
 #include <ctype.h>
+#include <stdio.h>
 #include <stdbool.h>
 /**
- * main - Entry point
- * @argc: size of argv
- * @argv: array of strings
- * Return: Always 0 (Success)
+ * coinConverter - helper function
+ * @i: int
+ * Return: int
  */
-int main(int argc, char *argv[])
+
+int coinConverter(int i)
 {
 	int count = 0;
 
@@ -48,4 +49,38 @@ int main(int argc, char *argv[])
 	}
 
 	return (count);
+}
+
+/**
+ * main - Entry point
+ * @argc: size of argv
+ * @argv: array of strings
+ * Return: Always 0 (Success)
+ */
+int main(int argc, char *argv[])
+{
+	int i, coin;
+
+	coin = 0;
+
+	if (argc != 2)
+	{
+		printf("Error\n");
+		return (1);
+	}
+
+	i = atoi(argv[1]);
+
+	if (i < 0)
+	{
+		printf("0\n");
+	}
+	else
+	{
+		coin = coinConverter(i);
+
+		printf("%d\n", coin);
+	}
+
+	return (0);
 }
