@@ -12,30 +12,8 @@ char *str_concat(char *s1, char *s2)
 	int size1, size2, i, j;
 	char *s;
 
-	size1 = 0;
-	size2 = 0;
-	if (s1 == NULL)
-	{
-		size1 = 0;
-	}
-	else
-	{
-		while (s1[size1] != '\0')
-		{
-			size1++;
-		}
-	}
-	if (s2 == NULL)
-	{
-		size2 = 0;
-	}
-	else
-	{
-		while (s2[size2] != '\0')
-		{
-			size2++;
-		}
-	}
+	size1 = get_size(s1);
+	size2 = get_size(s2);
 	s = malloc((size1 + size2 + 1) * sizeof(char));
 	if (s == NULL)
 	{
@@ -50,4 +28,27 @@ char *str_concat(char *s1, char *s2)
 		s[i + j] = s2[j];
 	}
 	return (s);
+}
+
+/**
+ * get_size - gets size of a string
+ * @s: string
+ * Return: size
+ */
+int get_size(char *s)
+{
+	int size;
+
+	if (s == NULL)
+	{
+		size = 0;
+	}
+	else
+	{
+		while (s[size] != '\0')
+		{
+			size++;
+		}
+	}
+	return (size);
 }
