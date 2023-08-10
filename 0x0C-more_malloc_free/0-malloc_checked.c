@@ -4,6 +4,7 @@
 /**
  * malloc_checked - checks sign
  * @b: int
+ * return: pointer
  */
 void *malloc_checked(unsigned int b)
 {
