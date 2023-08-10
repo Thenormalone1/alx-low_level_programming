@@ -1,0 +1,24 @@
+#include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
+/**
+ * _calloc - callocs
+ * @nmemb: unsigned integer
+ * @size: unsigned integar
+ * Return: pointer
+ */
+void *_calloc(unsigned int nmemb, unsigned int size)
+{
+	void *a;
+	int i;
+
+	a = malloc(nmemb * size);
+	if (a == NULL || nmemb == 0 || size == 0)
+	{
+		return (NULL);
+	}
+	for (i = 0; i < size; i++)
+	{
+		a[i] = 0;
+	}
+}
