@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- * argstostr - 
+ * argstostr - concatenates arguments
  * @ac: size of av
  * @av: array of strings
  * Return: 0
