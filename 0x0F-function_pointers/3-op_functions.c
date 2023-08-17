@@ -1,6 +1,5 @@
 #include "3-calc.h"
-#include <stdio.h>
-#include <stdlib.h>
+
 /**
  * op_add - adds 2 ints
  * @a: int1
@@ -54,10 +53,10 @@ int op_div(int a, int b)
  */
 int op_mod(int a, int b)
 {
-	if (b != 0)
+	if (b == 0)
 	{
-		return (a % b);
+		printf("Error\n");
+		exit(100);
 	}
-	printf("%s\n", "Error");
-	exit(100);
+	return (a % b);
 }
