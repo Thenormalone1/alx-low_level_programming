@@ -2,6 +2,11 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
+/**
+ * get_op_func - chooses ops
+ * @s: char
+ * Return: pointer
+ */
 
 int (*get_op_func(char *s))(int, int)
 {

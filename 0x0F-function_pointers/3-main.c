@@ -15,17 +15,17 @@ int main(int argc, char *argv[])
 
 	if (argc != 4)
 	{
-		printf("%s", "Error");
+		printf("%s\n", "Error");
 	}
 	num1 = atoi(argv[1]);
 	num2 = atoi(argv[3]);
 	p = get_op_func(argv[2]);
 	if (p == NULL)
 	{
-		printf("%s", "Error");
+		printf("%s\n", "Error");
 		return (99);
 	}
 	ans = (*p)(num1, num2);
-	printf( "%d\n", ans);
+	printf("%d\n", ans);
 	return (0);
 }
