@@ -22,5 +22,6 @@ int sum_them_all(const unsigned int n, ...)
 	{
 	sum = sum + va_arg(n2, int);
 	}
+	va_end(n2);
 	return (sum);
 }
