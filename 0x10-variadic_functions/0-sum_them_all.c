@@ -5,6 +5,7 @@
 /**
  * sum_them_all - sums arguments
  * @n: int number of passed
+ * @...: variable parameter
  * Return: int
  */
 int sum_them_all(const unsigned int n, ...)
