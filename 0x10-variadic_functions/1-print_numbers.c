@@ -26,6 +26,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 				j++;
 			}
 		}
+		j = 0;
 	}
 	printf("\n");
 }
