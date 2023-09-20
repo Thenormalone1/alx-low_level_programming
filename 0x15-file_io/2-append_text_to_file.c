@@ -4,7 +4,7 @@
  * append_text_to_file - Appends text
  * @filename: A pointer to the name of the file
  * @text_content: The string to add
- * Return: If the function fails or filename is NULL  
+ * Return: If the function fails or filename is NULL
  */
 int append_text_to_file(const char *filename, char *text_content)
 {
